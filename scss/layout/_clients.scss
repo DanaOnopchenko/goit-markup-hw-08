@@ -1,0 +1,37 @@
+.clients {
+@extend %section;
+}
+.clients__title {
+    margin-bottom: 50px;
+}
+.clients__list {
+    @extend %reset-list;
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--indent);
+}
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icons-color);
+    border-radius: 4px;
+    color: var(--icons-color);
+
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+        }
+}
+
+.clients__icons {
+    fill: currentColor;
+}
+

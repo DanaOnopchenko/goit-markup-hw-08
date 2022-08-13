@@ -1,0 +1,33 @@
+.feature {
+    @extend %section;
+}
+.feature__list{
+    @extend %reset-list;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+
+}
+.feature__item {
+    width: 270px;
+}
+
+.feature__thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color-grey);
+    height: 120px;
+    margin-bottom: var(--indent);
+}
+
+.feature__subtitle {
+    margin-bottom: 10px;
+}
+
+.feature__desc {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--secondary-txt-color);
+}

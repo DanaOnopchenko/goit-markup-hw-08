@@ -1,0 +1,24 @@
+.logo {
+    @extend %reset-link;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+
+    &--accent-clr {
+            color: var(--accent-color);
+        }
+}
+
+.header__logo {
+    margin-right: 93px;
+    color: var(--logo-black);
+}
+
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--white-main-color);
+}
+

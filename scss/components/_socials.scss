@@ -1,0 +1,51 @@
+.socials {
+    @extend %reset-list;
+    display: flex;
+    gap: 10px;
+}
+
+.socials__link {
+    @extend %reset-link;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+        }
+
+        &--mode-dark {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--white-main-color);
+        }
+}
+
+.socials__icon {
+        &--mode-light {
+            fill: var(--icons-color);
+            transition-property: fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+            .socials__link:hover &,
+            .socials__link:focus & {
+                    fill: var(--white-main-color);
+                }
+            
+    }
+        &--mode-dark {
+            fill: currentColor;
+        }
+}
+
+
+
+
+
