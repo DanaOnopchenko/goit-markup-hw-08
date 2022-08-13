@@ -1,6 +1,11 @@
 .services {
-    @extend %section;
-    @extend %section--no-padding;
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        }
+        @extend %section;
+        @extend %section--no-padding;
 }
 .services__title {
     margin-bottom: 50px;
