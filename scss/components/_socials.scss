@@ -2,6 +2,7 @@
     @extend %reset-list;
     display: flex;
     gap: 10px;
+    justify-content: center;
 }
 
 .socials__link {
