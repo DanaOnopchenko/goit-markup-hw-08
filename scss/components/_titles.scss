@@ -24,15 +24,12 @@
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-align: center;
-    @media screen and (min-width:768px) {
-        text-align: left;
+    
+    @media screen and (max-width:767px) {
+        text-align: center;
     }
 
     &--mode-ligth {
             color: var(--white-main-color);
         }
-}
-.footer__subtitle {
-    margin-bottom: 20px;
 }
