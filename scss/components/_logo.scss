@@ -16,8 +16,12 @@ font-size: 26px;
 }
 
 .header__logo {
-    margin-right: 93px;
+    margin-right: 87px;
     color: var(--logo-black);
+
+    @media screen and (min-width:1200px){
+        margin-right: 93px;
+    }
 }
 
 .footer__logo {

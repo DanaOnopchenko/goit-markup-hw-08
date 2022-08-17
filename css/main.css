@@ -81,8 +81,13 @@ img {
 }
 
 .header__logo {
-  margin-right: 93px;
+  margin-right: 87px;
   color: var(--logo-black);
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
 }
 
 .footer__logo {
@@ -112,8 +117,8 @@ img {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
   font-weight: 700;
   font-size: 16px;
   text-align: center;
@@ -125,6 +130,12 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .hero__btn {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 .hero__btn:hover, .hero__btn:focus {
   background-color: var(--btn-hover-hero);
@@ -153,10 +164,15 @@ img {
 }
 
 .section-title {
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   letter-spacing: 0.03em;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+  }
 }
 .section-title--visually-hidden {
   position: absolute;
@@ -241,8 +257,23 @@ img {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscrib-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .subscrib-form__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding: 15px;
   margin-bottom: 20px;
@@ -253,6 +284,12 @@ img {
   outline: transparent;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+@media screen and (min-width: 1200px) {
+  .subscrib-form__input {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .subscrib-form__btn {
@@ -683,14 +720,16 @@ img {
           align-items: center;
 }
 
-.header__contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 50px;
+@media screen and (min-width: 1200px) {
+  .header__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 50px;
+  }
 }
 
 .header__item {
@@ -709,11 +748,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428571429;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: var(--secondary-txt-color);
   -webkit-transition-property: color;
@@ -723,13 +762,25 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .header__phone {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+  }
+}
 .header__phone:hover, .header__phone:focus {
   color: var(--accent-color);
 }
 
 .header__icons {
   fill: currentColor;
-  margin-right: 10px;
+  margin-right: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .header__icons {
+    margin-right: 10px;
+  }
 }
 
 .header__email {
@@ -739,11 +790,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428571429;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: var(--secondary-txt-color);
   -webkit-transition-property: color;
@@ -753,19 +804,30 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .header__email {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+  }
+}
 .header__email:hover, .header__email:focus {
   color: var(--accent-color);
 }
 
-.nav {
-  margin-right: auto;
+@media screen and (min-width: 768px) {
+  .nav {
+    margin-right: auto;
+  }
 }
 
-.nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 50px;
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
+  }
 }
 
 .nav__link {
@@ -802,12 +864,11 @@ img {
 }
 
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/bg-hero.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-hero.jpg);
   background-repeat: no-repeat;
@@ -815,16 +876,34 @@ img {
   background-size: cover;
   background-color: var(--bg-color-hero);
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 800px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .hero__title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 1.6153846154;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
   color: var(--white-main-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+  }
 }
 
 .feature__list {
@@ -922,7 +1001,12 @@ img {
 }
 
 .team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+  }
 }
 
 .team__list {
@@ -972,13 +1056,21 @@ img {
 }
 
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: var(--indent);
@@ -994,17 +1086,29 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
-  height: 92px;
   border: 1px solid var(--icons-color);
   border-radius: 4px;
   color: var(--icons-color);
+  width: 210px;
+  height: 92px;
   -webkit-transition-property: color, border;
   transition-property: color, border;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+    height: 92px;
+  }
 }
 .clients__link:hover, .clients__link:focus {
   color: var(--accent-color);
@@ -1030,10 +1134,28 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 60px;
-  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (max-width: 1199px) {
+  .footer__container {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
+    gap: 70px;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
