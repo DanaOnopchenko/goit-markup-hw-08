@@ -7,8 +7,7 @@
 
 .nav__list {
     @extend %reset-list;
-   
-    display: flex;
+       display: flex;
     gap: 50px;
     }
     
