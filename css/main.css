@@ -562,6 +562,13 @@ img {
     height: 581px;
   }
 }
+@media screen and (max-width: 450px) {
+  .modal {
+    width: 315px;
+    height: 550px;
+    padding: 20px;
+  }
+}
 
 .modal__btn {
   position: absolute;
@@ -608,9 +615,20 @@ img {
     line-height: 1.15;
   }
 }
+@media screen and (max-width: 450px) {
+  .form__title {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+}
 
 .form__group {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 450px) {
+  .form__group {
+    margin-bottom: 10px;
+  }
 }
 
 .form__wrap {
@@ -721,6 +739,23 @@ img {
     line-height: 1.1666666667;
   }
 }
+@media screen and (max-width: 450px) {
+  .form__wrap > textarea::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .form__wrap > textarea::-moz-placeholder {
+    font-size: 12px;
+  }
+  .form__wrap > textarea:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .form__wrap > textarea::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .form__wrap > textarea::placeholder {
+    font-size: 12px;
+  }
+}
 
 .form__message {
   width: 100%;
@@ -732,6 +767,11 @@ img {
   resize: none;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 450px) {
+  .form__message {
+    height: 100px;
+  }
 }
 .form__message:hover, .form__message:focus {
   border: 1px solid var(--accent-color);
@@ -763,6 +803,11 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 450px) {
+  .form__agreement {
+    margin-bottom: 20px;
+  }
 }
 
 .form__checkbox-icon--check {
@@ -813,6 +858,13 @@ img {
   font-weight: 700;
   line-height: 1.875;
   letter-spacing: 0.06em;
+}
+@media screen and (max-width: 450px) {
+  .form__btn {
+    font-weight: 500px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 .menu__btn {
