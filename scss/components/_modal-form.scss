@@ -4,9 +4,14 @@
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
-    line-height: calc(23 / 20);
+    line-height: calc(30 / 20);
     letter-spacing: 0.03em;
+
+    @media screen and(min-width: 1200px) {
+    line-height: calc(23 / 20); 
+    }
 }
+
 
 .form__group {
     margin-bottom: 20px;
@@ -67,10 +72,15 @@
 
 .form__wrap>textarea::placeholder {
     font-weight: 400;
-    font-size: 12px;
-    line-height: calc(14 / 12);
+    font-size: 14px;
+    line-height: calc(16 / 14);
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+
+    @media screen and(min-width: 1200px) {
+            font-size: 12px;
+                line-height: calc(14 / 12);
+        }
 }
 
 .form__message {
@@ -134,11 +144,16 @@
 
 .form__agreement-txt {
     font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.03em;
     color: var(--secondary-txt-color);
     user-select: none;
+
+    @media screen and(min-width: 1200px) {
+            font-size: 14px;
+            line-height: calc(24 / 14);
+        }
 }
 
 .form__agreement-link {

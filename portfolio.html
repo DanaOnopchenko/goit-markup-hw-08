@@ -75,7 +75,7 @@
           <!-- Filter portfolio -->
           <ul class="filter filter--bottom">
             <li class="filter__item">
-              <button class="btn filter__btn" type="button">Всі</button>
+              <button class="btn filter__btn filter__btn--padding" type="button">Усі</button>
             </li>
             <li class="filter__item">
               <button class="btn filter__btn" type="button">Веб-сайти</button>
@@ -95,13 +95,37 @@
             <li class="card-set__item">
               <a class="card-set__card" href="">
                 <div class="card-set__picture">
-                  <img
-                    class="card-set__img"
-                    src="./images/portfolio/technokryak.jpg"
-                    alt="веб-сайт технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-1@1x_lg.jpg 1x,
+                        ./images/portfolio/img-1@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-1@1x_md.jpg 1x,
+                        ./images/portfolio/img-1@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-1@1x_sm.jpg 1x,
+                        ./images/portfolio/img-1@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card-set__img"
+                      src="./images/portfolio/img-1@1x_sm.jpg"
+                      alt="веб-сайт технокряк"
+                    />
+                  </picture>
                   <div class="card-set__overlay">
                     <p class="card-set__txt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -120,13 +144,37 @@
             <li class="card-set__item">
               <a class="card-set__card" href="">
                 <div class="card-set__picture">
-                  <img
-                    class="card-set__img"
-                    src="./images/portfolio/neworlean.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-2@1x_lg.jpg 1x,
+                        ./images/portfolio/img-2@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-2@1x_md.jpg 1x,
+                        ./images/portfolio/img-2@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-2@1x_sm.jpg 1x,
+                        ./images/portfolio/img-2@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card-set__img"
+                      src="./images/portfolio/img-2@1x_sm.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
                   <div class="card-set__overlay">
                     <p class="card-set__txt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -148,13 +196,37 @@
             <li class="card-set__item">
               <a href="" class="card-set__card">
                 <div class="card-set__picture">
-                  <img
-                    class="card-set__img"
-                    src="./images/portfolio/seafood.jpg"
-                    alt="Приложение ресторана Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-3@1x_lg.jpg 1x,
+                        ./images/portfolio/img-3@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-3@1x_md.jpg 1x,
+                        ./images/portfolio/img-3@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-3@1x_sm.jpg 1x,
+                        ./images/portfolio/img-3@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card-set__img"
+                      src="./images/portfolio/img-3@1x_sm.jpg"
+                      alt="Приложение ресторана Seafood"
+                    />
+                  </picture>
                   <div class="card-set__overlay">
                     <p class="card-set__txt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -173,13 +245,37 @@
             <li class="card-set__item">
               <a href="" class="card-set__card">
                 <div class="card-set__picture">
-                  <img
-                    class="card-set__img"
-                    src="./images/portfolio/prime.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-4@1x_lg.jpg 1x,
+                        ./images/portfolio/img-4@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-4@1x_md.jpg 1x,
+                        ./images/portfolio/img-4@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-4@1x_sm.jpg 1x,
+                        ./images/portfolio/img-4@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card-set__img"
+                      src="./images/portfolio/img-4@1x_sm.jpg"
+                      alt="Проект Prime"
+                    />
+                  </picture>
                   <div class="card-set__overlay">
                     <p class="card-set__txt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -199,13 +295,37 @@
             <li class="card-set__item">
               <a href="" class="card-set__card">
                 <div class="card-set__picture">
-                  <img
-                    class="card-set__jpg"
-                    src="./images/portfolio/boxes.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-5@1x_lg.jpg 1x,
+                        ./images/portfolio/img-5@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-5@1x_md.jpg 1x,
+                        ./images/portfolio/img-5@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-5@1x_sm.jpg 1x,
+                        ./images/portfolio/img-5@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card-set__jpg"
+                      src="./images/portfolio/img-5@1x_sm.jpg"
+                      alt="Проект Boxes"
+                    />
+                  </picture>
                   <div class="card-set__overlay">
                     <p class="card-set__txt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -225,13 +345,37 @@
             <li class="card-set__item">
               <a href="" class="card-set__card">
                 <div class="card-set__picture">
-                  <img
-                    class="card-set__jpg"
-                    src="./images/portfolio/inspiration.jpg"
-                    alt="Веб-сайт Inspiration has no Borders"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-6@1x_lg.jpg 1x,
+                        ./images/portfolio/img-6@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-6@1x_md.jpg 1x,
+                        ./images/portfolio/img-6@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-6@1x_sm.jpg 1x,
+                        ./images/portfolio/img-6@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card-set__jpg"
+                      src="./images/portfolio/img-6@1x_sm.jpg"
+                      alt="Веб-сайт Inspiration has no Borders"
+                    />
+                  </picture>
                   <div class="card-set__overlay">
                     <p class="card-set__txt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -251,13 +395,37 @@
             <li class="card-set__item">
               <a href="" class="card-set__card">
                 <div class="card-set__picture">
-                  <img
-                    class="card-set__ipg"
-                    src="./images/portfolio/limited.jpg"
-                    alt="дизайн издания Limited Edition"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-7@1x_lg.jpg 1x,
+                        ./images/portfolio/img-7@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-7@1x_md.jpg 1x,
+                        ./images/portfolio/img-7@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-7@1x_sm.jpg 1x,
+                        ./images/portfolio/img-7@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card-set__ipg"
+                      src="./images/portfolio/img-7@1x_sm.jpg"
+                      alt="дизайн издания Limited Edition"
+                    />
+                  </picture>
                   <div class="card-set__overlay">
                     <p class="card-set__txt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -277,13 +445,37 @@
             <li class="card-set__item">
               <a href="" class="card-set__card">
                 <div class="card-set__picture">
-                  <img
-                    class="card-set__ipg"
-                    src="./images/portfolio/lab.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-8@1x_lg.jpg 1x,
+                        ./images/portfolio/img-8@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-8@1x_md.jpg 1x,
+                        ./images/portfolio/img-8@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-8@1x_sm.jpg 1x,
+                        ./images/portfolio/img-8@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card-set__ipg"
+                      src="./images/portfolio/img-8@1x_sm.jpg"
+                      alt="Проект LAB"
+                    />
+                  </picture>
                   <div class="card-set__overlay">
                     <p class="card-set__txt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -303,13 +495,37 @@
             <li class="card-set__item">
               <a href="" class="card-set__card">
                 <div class="card-set__picture">
-                  <img
-                    class="card-set__ipg"
-                    src="./images/portfolio/growing.jpg"
-                    alt="Приложение Growing Business"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-9@1x_lg.jpg 1x,
+                        ./images/portfolio/img-9@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-9@1x_md.jpg 1x,
+                        ./images/portfolio/img-9@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-9@1x_sm.jpg 1x,
+                        ./images/portfolio/img-9@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card-set__ipg"
+                      src="./images/portfolio/img-9@1x_sm.jpg"
+                      alt="Приложение Growing Business"
+                    />
+                  </picture>
                   <div class="card-set__overlay">
                     <p class="card-set__txt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -427,7 +643,7 @@
       </div>
     </footer>
     <!-- mobile menu -->
-    <div class="mobile mobile--is-open" data-menu>
+    <div class="mobile" data-menu>
       <div class="mobile__container">
         <button class="mobile__btn" type="button" data-menu-close>
           <svg class="mobile__close" width="40" height="40">
